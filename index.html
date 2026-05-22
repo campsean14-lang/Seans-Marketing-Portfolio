@@ -3,226 +3,392 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sean's Marketing Portfolio</title>
+    <title>Sean's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <div class="bg-blobs" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+    </div>
+
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">Sean's Marketing Portfolio</div>
-            <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="nav-brand">Sean's Portfolio</div>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link active">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#organizations" class="nav-link">Organizations</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#articles" class="nav-link">Article</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="about-section section-gradient">
         <div class="container">
             <div class="about-content">
                 <div class="about-image">
-                    <img src="assets/images/Profile_Photo.jpeg" alt="Profile Picture">
+                    <img src="assets/images/Sean Headshot.JPEG" alt="Sean Campbell headshot">
                 </div>
                 <div class="about-text">
-                    <h1>Hello, I'm Sean Campbell</h1>
-                    <p class="subtitle">Business Marketing Student & Creative Designer</p>
-                    <p>I'm a passionate marketing professional specializing in creating compelling visual content that drives engagement and results. With expertise in graphic design, data visualization, and multimedia content creation, I help brands tell their stories effectively.</p>
-                    <a href="assets/Documents/seancampbellresume.pdf" class="btn-download" download="Sean_Campbell_Resume.pdf">Download Resume</a>
+                    <p class="eyebrow hero-animate">Creative • Warm • Strategic</p>
+                    <h1 class="hero-headline">Welcome, I'm Sean Campbell</h1>
+                    <p class="subtitle hero-animate">Business Marketing Student & Creative Designer</p>
+                    <p class="hero-animate">I was a Marketing student at Virginia Commonwealth University with strengths in project planning, AI strategy, and research. At DoorDash, I executed campus-focused campaigns and partnerships with the Strategy &amp; Operations team to grow DashPass for Students, engagement, and acquisition.</p>
+                    <p class="hero-animate">Previously at RACER Trust, I created marketing materials, social media plans, and analytics dashboards to track performance. I brought a collaborative, community-driven approach and a strong ability to align audience needs with organizational goals.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
+    <section id="education" class="education-section section-gradient">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-box">
+                <p><strong>School:</strong> Virginia Commonwealth University</p>
+                <p><strong>Major:</strong> Business Marketing</p>
+                <p><strong>Minor:</strong> Sales</p>
+                <p><strong>GPA:</strong> 3.5</p>
+                <p><strong>Expected Graduation:</strong> May 2028</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section section-gradient">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <p class="portfolio-subtitle">Showcasing three roles with visuals and impact.</p>
+
+            <div class="experience-grid">
+                <article class="experience-card" data-animate>
+                    <div class="experience-image-wrap">
+                        <img src="assets/images/3.webp" alt="Public Relations work experience image" class="experience-image">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Public Relations Intern</h3>
+                        <p class="experience-meta">Hodges Partnership • Feb 2026-Apr 2026</p>
+                        <p class="experience-location">Location: Richmond, VA</p>
+                        <p>I supported account managers and collaborated on active client accounts by creating compelling messages aligned with client goals. I researched and produced SEO-driven blog content for The Phil that highlighted local nonprofits, built community partnerships, and drove organic traffic.</p>
+                    </div>
+                </article>
+
+                <article class="experience-card" data-animate>
+                    <div class="experience-image-wrap">
+                        <img src="assets/images/RACER-Trust-Web.jpg" alt="RACER Trust work experience image" class="experience-image">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Marketing Intern</h3>
+                        <p class="experience-meta">RACER Trust • May 2025-July 2025</p>
+                        <p class="experience-location">Location: Remote</p>
+                        <p>I redesigned marketing brochures across 3+ business lines, which improved clarity and visual consistency for client-facing materials. I developed an interactive analytics dashboard that enabled real-time tracking of website engagement and performance metrics. Lastly, I developed a comprehensive social media plan for the annual Brownfields Conference that targeted audience growth and stakeholder engagement.</p>
+                    </div>
+                </article>
+
+                <article class="experience-card" data-animate>
+                    <div class="experience-image-wrap">
+                        <img src="assets/images/Doordash_1-1536x1536.webp" alt="DoorDash work experience image" class="experience-image">
+                    </div>
+                    <div class="experience-content">
+                        <h3>Event Specialist</h3>
+                        <p class="experience-meta">DoorDash • Jan 2025-Dec 2025</p>
+                        <p class="experience-location">Location: Richmond, VA</p>
+                        <p>I organized campus events, which resulted in a 150 person increase in student sign-ups for DoorDash and DashPass services every week. I executed creative marketing strategies tailored to the campus environment, which effectively increased brand awareness and user engagement among the student body.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="organizations" class="organizations-section section-gradient">
+        <div class="container">
+            <h2 class="section-title">Organizations</h2>
+            <p class="portfolio-subtitle">Leadership, involvement, and impact across communities.</p>
+
+            <div class="organizations-grid">
+                <article class="organization-card" data-animate>
+                    <div class="org-card-wrapper">
+                        <div class="org-header">
+                            <div class="org-header-text">
+                                <h3>Alpha Kappa Psi</h3>
+                                <p class="org-date-range">Nov 2024-Present</p>
+                                <p class="organization-note">The oldest and largest co-ed professional business fraternity</p>
+                            </div>
+                            <div class="org-image-wrap">
+                                <img src="assets/images/Alpha_Kappa_Psi_Greek_Clothing_Co_Category_Page_Background_600x600_crop_center.webp" alt="Alpha Kappa Psi organization image" class="org-image">
+                            </div>
+                        </div>
+                        <div class="org-content">
+                            <div class="org-role-block">
+                                <h4>Marketing Director</h4>
+                                <p class="org-meta">May 2025-Dec 2025</p>
+                                <p>As Marketing Director, I increased engagement on our Instagram page by 90k views through a series of videos, posts, and reels.</p>
+                            </div>
+
+                            <div class="org-role-block">
+                                <h4>Recruitment Director</h4>
+                                <p class="org-meta">Nov 2024-May 2025</p>
+                                <p>As Recruitment Director, I facilitated and managed all recruitment events, ensuring seamless operations and exceptional experiences for prospective members.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="organization-card" data-animate>
+                    <div class="org-card-wrapper">
+                        <div class="org-header">
+                            <div class="org-header-text">
+                                <h3>American Marketing Association</h3>
+                                <p class="org-date-range">Oct 2025-Present</p>
+                                <p class="organization-note">The largest, most comprehensive professional community for marketers worldwide</p>
+                            </div>
+                            <div class="org-image-wrap">
+                                <img src="assets/images/AMA.png" alt="American Marketing Association organization image" class="org-image">
+                            </div>
+                        </div>
+                        <div class="org-content">
+                            <div class="org-role-block single">
+                                <h4>Active Member</h4>
+                                <p class="org-meta">Oct 2025-Present</p>
+                                <p>As a member of the American Marketing Association, I'm part of a community that's all about creativity, strategy, and impact. Through workshops and networking events, I get to strengthen my marketing skills and connect with people who share the same passion for innovation and brand storytelling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section section-gradient">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="portfolio-subtitle">Two featured projects beyond my portfolio work.</p>
+
+            <div class="projects-grid">
+                <article class="project-card" data-animate>
+                    <a href="assets/images/RACER DASHBOARD.png" class="project-media" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/RACER DASHBOARD.png" alt="Project 1 preview" class="project-image">
+                    </a>
+                    <div class="project-content">
+                        <h3>RACER Analytic Dashboard</h3>
+                        <p><strong>May 2025-July 2025</strong></p>
+                        <p>Built an interactive analytics dashboard to visualize key marketing and website performance metrics, enabling clearer reporting and real-time insight into engagement trends.</p>
+                    </div>
+                </article>
+
+                <article class="project-card" data-animate>
+                    <a href="assets/images/Team 47-2025 BA and AI Challenge ENTRY FORM.pdf" class="project-media" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/images/virginia-commonwealth-university-vcu-vector-logo.png" alt="Project 2 preview" class="project-image project-image-contain">
+                        <span class="project-badge">Team 47-202...</span>
+                    </a>
+                    <div class="project-content">
+                        <h3>VCU Business Analytics &amp; AI Challenge</h3>
+                        <p><strong>Mar 2025 – Apr 2025</strong></p>
+                        <p>Associated with Virginia Commonwealth University</p>
+                        <p><strong>Business Analytics &amp; AI Challenge 2025</strong><br>Sponsored by Altria | Hosted by VCU Information Systems &amp; Supply Chain Departments</p>
+                        <p>Placed 3rd in a university-sponsored analytics competition focused on solving real-world manufacturing challenges using AI. Our team addressed three key areas:</p>
+                        <ul>
+                            <li><strong>Predictive Maintenance:</strong> Leveraged IoT data to forecast machine failures and reduce downtime by up to 50%.</li>
+                            <li><strong>AI-Powered Training:</strong> Designed a hybrid generative AI system to personalize employee training while maintaining human oversight.</li>
+                            <li><strong>Overtime Reduction:</strong> Applied AI tools to streamline scheduling and cut excess labor costs.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="articles" class="articles-section section-gradient">
+        <div class="container">
+            <h2 class="section-title">Featured Articles</h2>
+            <p class="portfolio-subtitle">Published pieces I worked on.</p>
+
+            <div class="articles-grid">
+                <article class="article-card" data-animate>
+                    <div class="article-content">
+                        <h3>How L.O.C.A.L. Adventures Fosters Youth Empowerment Through Fitness Programs</h3>
+                        <p class="article-meta">The Phil • April 9th, 2026</p>
+                        <p>Richmond nonprofit empowers youth through mindfulness programs, building life skills, confidence and community connection.</p>
+                        <a href="https://thephilva.com/2026/04/09/how-l-o-c-a-l-adventures-fosters-youth-empowerment-through-fitness-programs/" class="article-link" target="_blank" rel="noopener noreferrer">Read Article</a>
+                    </div>
+                </article>
+
+                <article class="article-card" data-animate>
+                    <div class="article-content">
+                        <h3>Preserving History: How Maymont Keeps Its Vision Alive</h3>
+                        <p class="article-meta">The Phil • May 5th, 2026</p>
+                        <p>Maymont Park serves its community in various ways, and this piece highlights how its vision continues to shine through.</p>
+                        <a href="https://thephilva.com/2026/05/05/preserving-history-how-maymont-keeps-its-vision-alive/" class="article-link" target="_blank" rel="noopener noreferrer">Read Article</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section section-gradient">
         <div class="container">
             <h2 class="section-title">My Work</h2>
-            <p class="portfolio-subtitle">Click to View</p>
+            <p class="portfolio-subtitle">Featured work and campaigns.</p>
 
-            <!-- Dashboards -->
-            <div class="portfolio-category">
-                <h3 class="category-title">Dashboards</h3>
-                <div class="portfolio-grid">
-                    <a href="assets/images/RACER DASHBOARD.png" download="RACER_DASHBOARD.png" class="portfolio-item">
-                        <img src="assets/images/RACER DASHBOARD.png" alt="RACER Analytic Dashboard">
-                        <div class="portfolio-overlay">
-                            <h4>RACER Analytic Dashboard</h4>
-                            <p>Marketing metrics visualization</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            <div class="portfolio-grid">
+                <article class="portfolio-item" data-animate data-category="flyers">
+                    <img src="assets/images/AKPSI Brochure.png" alt="AKPSI Brochure" class="lightbox-trigger" data-full="assets/images/AKPSI Brochure.png">
+                    <div class="portfolio-overlay"><h4>AKPSI Brochure</h4><p>AKPSI Marketing</p></div>
+                </article>
 
-            <!-- Flyers -->
-            <div class="portfolio-category">
-                <h3 class="category-title">Flyers</h3>
-                <div class="portfolio-grid">
-                    <a href="assets/images/AKPSI Brochure.png" download="AKPSI_Brochure.png" class="portfolio-item">
-                        <img src="assets/images/AKPSI Brochure.png" alt="Flyer 1">
-                        <div class="portfolio-overlay">
-                            <h4>AKPSI Brochure</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
-                    </a>
-                    <a href="assets/images/Black and Gold Geometric Festive Block Party Flyer (1).png" download="City_Dogs_Fundraising_Flyer.png" class="portfolio-item">
-                        <img src="assets/images/Black and Gold Geometric Festive Block Party Flyer (1).png" alt="Flyer 2">
-                        <div class="portfolio-overlay">
-                            <h4>City Dogs Fundraising Flyer</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
-                    </a>
-                    <a href="assets/images/Blue and Green Bold Ticket Announcement Instagram Story .mp4" download="Blue_and_Green_Bold_Ticket.mp4" class="portfolio-item video-item">
-                        <video src="assets/images/Blue and Green Bold Ticket Announcement Instagram Story .mp4" controls></video>
-                        <div class="portfolio-overlay">
-                            <h4>Raffle Ticket Flyer</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
-                    </a>
-                    <a href="assets/images/Brown Illustration Annual Bake Sale Flyer (1).png" download="Brown Illustration Annual Bake Sale Flyer (1).png" class="portfolio-item">
-                        <img src="assets/images/Brown Illustration Annual Bake Sale Flyer (1).png" alt="Flyer 4">
-                        <div class="portfolio-overlay">
-                            <h4>Bake Sale Flyer</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
-                    </a>
-                    <a href="assets/images/Blue and Yellow Volleyball Tournament Poster (1).png" download="blue and yellow volleyball tournament poster.png" class="portfolio-item">
-                        <img src="assets/images/Blue and Yellow Volleyball Tournament Poster (1).png" alt="Flyer 5">
-                        <div class="portfolio-overlay">
-                            <h4>Volleyball Tournament Flyer</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
-                    </a>
-                    <a href="assets/images/Build Your Own Bouquet Flyer .png" download="Build_Your_Own_Bouquet_Flyer .png" class="portfolio-item bouquet-item">
-                        <img src="assets/images/Build Your Own Bouquet Flyer .png" alt="Flyer 6">
-                        <div class="portfolio-overlay">
-                            <h4>Build Your Own Bouquet Flyer</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
-                    </a>
-                    <a href="assets/images/Clubhouse classics.png" download="Clubhouse classics.png" class="portfolio-item">
-                        <img src="assets/images/Clubhouse classics.png" alt="Flyer 7">
-                        <div class="portfolio-overlay">
-                            <h4>Recruitment Flyer</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
-                    </a>
-                    <a href="assets/images/Clubs and Connections Flyer .png" download="Clubs and Connections Flyer .png" class="portfolio-item">
-                        <img src="assets/images/Clubs and Connections Flyer .png" alt="Flyer 8">
-                        <div class="portfolio-overlay">
-                            <h4>Recruitment Flyer</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
-                    </a>
-                    <a href="assets/images/Dress for Success Flyer.png" download="Dress for Success Flyer.png" class="portfolio-item">
-                        <img src="assets/images/Dress for Success Flyer.png" alt="Flyer 9">
-                        <div class="portfolio-overlay">
-                            <h4>Recruitment Flyer</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
-                    </a>
-                    <a href="assets/images/Family Event Flyer.png" download="Family Event Flyer.png" class="portfolio-item">
-                        <img src="assets/images/Family Event Flyer.png" alt="Flyer 10">
-                        <div class="portfolio-overlay">
-                            <h4>Family Event Flyer</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+                <article class="portfolio-item" data-animate data-category="flyers">
+                    <img src="assets/images/Black and Gold Geometric Festive Block Party Flyer (1).png" alt="City Dogs Fundraising Flyer" class="lightbox-trigger" data-full="assets/images/Black and Gold Geometric Festive Block Party Flyer (1).png">
+                    <div class="portfolio-overlay"><h4>City Dogs Fundraising Flyer</h4><p>AKPSI Marketing</p></div>
+                </article>
 
-            <!-- Videos -->
-            <div class="portfolio-category">
-                <h3 class="category-title">Videos</h3>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item video-item">
-                        <video src="assets/videos/Bball Highlight Reel.mp4" poster="assets/images/bball highlight reel.mp4" controls></video>
-                        <div class="portfolio-info">
-                            <h4>Basketball Highlight Reel</h4>
-                            <p>AKPSI Marketing</p>
-                        </div>
+                <article class="portfolio-item video-item" data-category="flyers videos">
+                    <video src="assets/images/Blue and Green Bold Ticket Announcement Instagram Story .mp4" controls></video>
+                    <div class="portfolio-overlay"><h4>Raffle Ticket Flyer</h4><p>AKPSI Marketing</p></div>
+                </article>
+
+                <article class="portfolio-item" data-animate data-category="flyers">
+                    <img src="assets/images/Brown Illustration Annual Bake Sale Flyer (1).png" alt="Bake Sale Flyer" class="lightbox-trigger" data-full="assets/images/Brown Illustration Annual Bake Sale Flyer (1).png">
+                    <div class="portfolio-overlay"><h4>Bake Sale Flyer</h4><p>AKPSI Marketing</p></div>
+                </article>
+
+                <article class="portfolio-item" data-animate data-category="flyers">
+                    <img src="assets/images/Blue and Yellow Volleyball Tournament Poster (1).png" alt="Volleyball Tournament Flyer" class="lightbox-trigger" data-full="assets/images/Blue and Yellow Volleyball Tournament Poster (1).png">
+                    <div class="portfolio-overlay"><h4>Volleyball Tournament Flyer</h4><p>AKPSI Marketing</p></div>
+                </article>
+
+                <article class="portfolio-item" data-animate data-category="flyers">
+                    <img src="assets/images/Build Your Own Bouquet Flyer .png" alt="Build Your Own Bouquet Flyer" class="lightbox-trigger" data-full="assets/images/Build Your Own Bouquet Flyer .png">
+                    <div class="portfolio-overlay"><h4>Build Your Own Bouquet Flyer</h4><p>AKPSI Marketing</p></div>
+                </article>
+
+                <article class="portfolio-item" data-animate data-category="flyers">
+                    <img src="assets/images/Clubhouse classics.png" alt="Recruitment Flyer" class="lightbox-trigger" data-full="assets/images/Clubhouse classics.png">
+                    <div class="portfolio-overlay"><h4>Recruitment Flyer</h4><p>AKPSI Marketing</p></div>
+                </article>
+
+                <article class="portfolio-item" data-animate data-category="flyers">
+                    <img src="assets/images/Clubs and Connections Flyer .png" alt="Recruitment Flyer" class="lightbox-trigger" data-full="assets/images/Clubs and Connections Flyer .png">
+                    <div class="portfolio-overlay"><h4>Recruitment Flyer</h4><p>AKPSI Marketing</p></div>
+                </article>
+
+                <article class="portfolio-item" data-animate data-category="flyers">
+                    <img src="assets/images/Dress for Success Flyer.png" alt="Dress for Success Flyer" class="lightbox-trigger" data-full="assets/images/Dress for Success Flyer.png">
+                    <div class="portfolio-overlay"><h4>Dress for Success Flyer</h4><p>AKPSI Marketing</p></div>
+                </article>
+
+                <article class="portfolio-item" data-animate data-category="flyers">
+                    <img src="assets/images/Family Event Flyer.png" alt="Family Event Flyer" class="lightbox-trigger" data-full="assets/images/Family Event Flyer.png">
+                    <div class="portfolio-overlay"><h4>Family Event Flyer</h4><p>AKPSI Marketing</p></div>
+                </article>
+
+                <article class="portfolio-item video-item" data-category="videos">
+                    <video src="assets/videos/Bball Highlight Reel.mp4" poster="assets/images/bball highlight reel.mp4" controls></video>
+                    <div class="portfolio-overlay"><h4>Basketball Highlight Reel</h4><p>AKPSI Marketing</p></div>
+                </article>
+
+                <article class="portfolio-item dropdown-item" data-category="social">
+                    <img src="assets/images/1.png" alt="Social Media Post 1" class="lightbox-trigger" data-full="assets/images/1.png">
+                    <div class="portfolio-overlay">
+                        <h4>Instagram Post Set</h4>
+                        <p>AKPSI Marketing</p>
+                        <button class="dropdown-toggle">View More</button>
                     </div>
-                </div>
-            </div>
+                    <div class="dropdown-images">
+                        <img src="assets/images/1.png" alt="Additional Image 1" class="lightbox-trigger" data-full="assets/images/1.png">
+                        <img src="assets/images/2.png" alt="Additional Image 2" class="lightbox-trigger" data-full="assets/images/2.png">
+                    </div>
+                </article>
 
-            <!-- Social Media Posts -->
-            <div class="portfolio-category">
-                <h3 class="category-title">Social Media Posts</h3>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item dropdown-item">
-                        <img src="assets/images/1.png" alt="Social Media Post 1">
-                        <div class="portfolio-overlay">
-                            <h4>Instagram Post</h4>
-                            <p>AKPSI Marketing</p>
-                            <button class="dropdown-toggle">View More</button>
-                        </div>
-                        <div class="dropdown-images" style="display: none;">
-                            <img src="assets/images/1.png" alt="Additional Image 1" class="modal-trigger">
-                            <img src="assets/images/2.png" alt="Additional Image 2" class="modal-trigger">
-                        </div>
+                <article class="portfolio-item dropdown-item" data-category="social">
+                    <img src="assets/images/Recruitment Director Posts.png" alt="Social Media Post 2" class="lightbox-trigger" data-full="assets/images/Recruitment Director Posts.png">
+                    <div class="portfolio-overlay">
+                        <h4>Recruitment Post Series</h4>
+                        <p>AKPSI Marketing</p>
+                        <button class="dropdown-toggle">View More</button>
                     </div>
-                    <div class="portfolio-item dropdown-item">
-                        <img src="assets/images/Recruitment Director Posts.png" alt="Social Media Post 2">
-                        <div class="portfolio-overlay">
-                            <h4>Instagram Post</h4>
-                            <p>AKPSI Marketing</p>
-                            <button class="dropdown-toggle">View More</button>
-                        </div>
-                        <div class="dropdown-images" style="display: none;">
-                            <img src="assets/images/Recruitment Director Posts.png" alt="Image 1" class="modal-trigger">
-                            <img src="assets/images/R.png" alt="Image 2" class="modal-trigger">
-                            <img src="assets/images/M.png" alt="Image 3" class="modal-trigger">
-                            <img src="assets/images/3.png" alt="Image 4" class="modal-trigger">
-                            <img src="assets/images/4.png" alt="Image 5" class="modal-trigger">
-                            <img src="assets/images/5.png" alt="Image 6" class="modal-trigger">
-                            <img src="assets/images/6.png" alt="Image 7" class="modal-trigger">
-                            <img src="assets/images/7.png" alt="Image 8" class="modal-trigger">
-                            <img src="assets/images/8.png" alt="Image 9" class="modal-trigger">
-                            <img src="assets/images/9.png" alt="Image 10" class="modal-trigger">
-                            <img src="assets/images/Neutral Photo Collage Grid Summer Vibes Instagram Post.png" alt="Image 11" class="modal-trigger">
-                        </div>
+                    <div class="dropdown-images">
+                        <img src="assets/images/Recruitment Director Posts.png" alt="Image 1" class="lightbox-trigger" data-full="assets/images/Recruitment Director Posts.png">
+                        <img src="assets/images/R.png" alt="Image 2" class="lightbox-trigger" data-full="assets/images/R.png">
+                        <img src="assets/images/M.png" alt="Image 3" class="lightbox-trigger" data-full="assets/images/M.png">
+                        <img src="assets/images/3.png" alt="Image 4" class="lightbox-trigger" data-full="assets/images/3.png">
+                        <img src="assets/images/4.png" alt="Image 5" class="lightbox-trigger" data-full="assets/images/4.png">
+                        <img src="assets/images/5.png" alt="Image 6" class="lightbox-trigger" data-full="assets/images/5.png">
+                        <img src="assets/images/6.png" alt="Image 7" class="lightbox-trigger" data-full="assets/images/6.png">
+                        <img src="assets/images/7.png" alt="Image 8" class="lightbox-trigger" data-full="assets/images/7.png">
+                        <img src="assets/images/8.png" alt="Image 9" class="lightbox-trigger" data-full="assets/images/8.png">
+                        <img src="assets/images/9.png" alt="Image 10" class="lightbox-trigger" data-full="assets/images/9.png">
+                        <img src="assets/images/Neutral Photo Collage Grid Summer Vibes Instagram Post.png" alt="Image 11" class="lightbox-trigger" data-full="assets/images/Neutral Photo Collage Grid Summer Vibes Instagram Post.png">
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="resume" class="resume-section section-gradient">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <p class="resume-text">Download my professional resume to learn more about my experience, skills, and accomplishments.</p>
+                <a href="assets/Documents/seancampbellresume.pdf" class="btn-download" download="Sean_Campbell_Resume.pdf">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section-gradient">
         <div class="container">
             <h2 class="section-title">Contact</h2>
             <div class="contact-info">
                 <div class="contact-item">
+                    <span class="contact-icon" aria-hidden="true">✉</span>
                     <h4>Email</h4>
                     <p><a href="mailto:camp.sean.14@gmail.com">camp.sean.14@gmail.com</a></p>
                 </div>
                 <div class="contact-item">
-                    <h4>Phone</h4>
-                    <p><a href="tel:+15715359857">+1 (571) 535-9857</a></p>
-                </div>
-                <div class="contact-item">
+                    <span class="contact-icon" aria-hidden="true">↗</span>
                     <h4>Connect</h4>
                     <div class="social-links">
                         <a href="https://linkedin.com/in/sean-campbell-" target="_blank">LinkedIn</a>
                     </div>
                 </div>
             </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Sean Campbell. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal" style="display: none;">
+    <button id="scrollToTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <div id="imageModal" class="modal" aria-hidden="true">
         <span class="close">&times;</span>
+        <button class="modal-nav prev" aria-label="Previous image">&#10094;</button>
         <img class="modal-content" id="modalImage">
+        <button class="modal-nav next" aria-label="Next image">&#10095;</button>
     </div>
 
     <script src="script.js"></script>
